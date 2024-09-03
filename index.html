@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Uso de Recursos</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+
     <div class="container">
-        <div class="sidebar">
+        <div class="menu">
             <h1>Uso de Recursos</h1>
-            <ul id="month-menu">
+            <ul id="mes-menu">
               <li data-target="junho">Junho</li>
               <li data-target="agosto">Agosto</li>
               <li data-target="setembro">Setembro</li>
@@ -20,34 +20,44 @@
               <li data-target="novembro">Novembro</li>
               <li data-target="dezembro">Dezembro</li>
             </ul>
-          </div> 
-        <div class="main-content">
+          </div> <!--Container-->
 
-            <div class="dashboard-header">
-                <div class="image-container">
+        <div class="container-dashboard">
+
+            <div class="dashboards">
+                <div class="img-topo">
                     <img src="assets/Cópia de Navy Geometric Technology LinkedIn Banner.png" alt="Dashboard Image">
                     <div class="title">2024</div>
+                </div><!--img-topo-->
+            </div><!--Dashboards-->
+
+            <h2 class="titulo-seção">Dashboard's</h2>
+
+            <div class="meses-content">
+
+                <div class="mes active" id="junho">
+                  <h2>Junho</h2>
+                  <iframe title="junho" width="1250" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiNGJkZGU4ZDQtZDkwYi00MWI4LWFjMjYtZGUwMTQ0MTdkZjJiIiwidCI6ImIxMDUxYzRiLTNiOTQtNDFhYi05NDQxLWU3M2E3MjM0MmZkZCJ9" frameborder="0" allowFullScreen="true" ></iframe>
                 </div>
+
+                <div class="mes" id="agosto">
+                  <h2>Agosto</h2>
+                  <iframe title="Agosto" width="1250" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiNmJlNmE3MGQtZDg0Mi00NDE3LWI1YTMtMjc1Y2E4MjkzNzg1IiwidCI6ImIxMDUxYzRiLTNiOTQtNDFhYi05NDQxLWU3M2E3MjM0MmZkZCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+          
+                <div class="mes" id="setembro">
+                  <h2>Setembro</h2>
+                </div>
+          
+              </div>
             </div>
 
-            <h2 class="section-title">Resource Usage</h2>
-            <div class="charts">
-                <div class="chart">
-                    <h3>Student attendance</h3>
-                    
-                </div>
-                
-            </div>
             </div>
         </div>
     </div>
 
-    <svg style="display: none;">
-        <symbol id="house" viewBox="0 0 256 256">
-            <path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"></path>
-        </symbol>
-        </svg>
+    
 
-    <script src="script.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
