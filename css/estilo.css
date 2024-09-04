@@ -144,6 +144,14 @@ nav.menu {
     margin-bottom: 10px;
 }
 
+.mes {
+    display: none;
+  }
+  
+.mes.active {
+    display: block;
+}
+
 /* Responsividade */
 @media (max-width: 1024px) {
     
@@ -174,3 +182,42 @@ nav.menu {
         padding: 10px;
     }
 }
+
+.hidden {
+    display: none;
+  }
+  
+  .ano {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+
+  /* Estilo básico do menu */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Estilo para os anos */
+  .menu .ano {
+    cursor: pointer;
+    padding: 8px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }
+
+  .meses li.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .meses-content .mes {
+    display: none;
+  }
+  
+  /* Estilo para exibir o mês selecionado */
+  .meses-content .mes.active {
+    display: block;
+  }
+  

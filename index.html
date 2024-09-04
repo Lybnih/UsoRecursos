@@ -16,18 +16,67 @@
     <nav class="menu">
       <h1>Uso de Recursos</h1>
 
-      <!--DATAS AQUI-->
+      <!--------------------DATAS AQUI------------------------------>
+
+
       <ul id="mes-menu">
         <li data-target="todos" class="active">Todos</li>
-        <!--ADICIONE DATAS NESSA LISTA ABAIXO-->
-        <li data-target="2024-junho">2024-Junho</li>
-        <li data-target="2024-agosto">2024-Agosto</li>
-        <li data-target="2024-setembro">2024-Setembro</li>
-        <li data-target="2024-outubro">2024-Outubro</li>
-        <li data-target="2024-novembro">2024-Novembro</li>
-        <li data-target="2024-dezembro">2024-Dezembro</li>
-        <li data-target="2025-janeiro">2025-Janeiro</li>
 
+        <!--ANO DE 2024-->
+        <li class="ano" onclick="toggleMeses('ano2024')">2024</li>
+        <ul id="ano2024" class="meses hidden">
+          <li data-target="2024-junho">Junho</li>
+          <li data-target="2024-agosto">Agosto</li>
+          <li data-target="2024-setembro">Setembro</li>
+          <li data-target="2024-outubro">Outubro</li>
+          <li data-target="2024-novembro">Novembro</li>
+          <li data-target="2024-dezembro">dezembro</li>
+        </ul><!--acaba ano 2024-->
+
+        <!--ANO DE 2025-->
+        <li class="ano" onclick="toggleMeses('ano2025')">2025</li>
+        <ul id="ano2025" class="meses hidden">
+          <li data-target="2025-janeiro">Janeiro</li>
+          <li data-target="2025-fevereiro">Fevereiro</li>
+          <li data-target="2025-marco">Março</li>
+          <li data-target="2025-abril">Abril</li>
+          <li data-target="2025-maio">Maio</li>
+          <li data-target="2025-junho">Junho</li>
+          <li data-target="2025-agosto">Agosto</li>
+          <li data-target="2025-setembro">Setembro</li>
+          <li data-target="2025-outubro">Outubro</li>
+          <li data-target="2025-novembro">Novembro</li>
+          <li data-target="2025-dezembro">dezembro</li>
+        </ul><!--acaba ano 2025-->
+
+        <!--ANO DE 2026-->
+        <li class="ano" onclick="toggleMeses('ano2026')">2026</li>
+        <ul id="ano2026" class="meses hidden">
+          <li data-target="2026-janeiro">Janeiro</li>
+          <li data-target="2026-fevereiro">Fevereiro</li>
+          <!-- Continue adicionando os meses de 2026 -->
+
+        </ul><!--acaba ano 2026-->
+
+        <!--ANO DE 2027-->
+        <li class="ano" onclick="toggleMeses('ano2027')">2027</li>
+        <ul id="ano2027" class="meses hidden">
+          <li data-target="2027-janeiro">Janeiro</li>
+          <li data-target="2027-fevereiro">Fevereiro</li>
+          <!-- Continue adicionando os meses de 2027 -->
+
+        </ul><!--acaba ano 2027-->
+
+        <!--ANO DE 2028-->
+        <li class="ano" onclick="toggleMeses('ano2028')">2028</li>
+        <ul id="ano2028" class="meses hidden">
+          <li data-target="2028-janeiro">Janeiro</li>
+          <li data-target="2028-fevereiro">Fevereiro</li>
+          <!-- Continue adicionando os meses de 2028 -->
+
+        </ul><!--acaba ano 2028-->
+
+      </ul>
       </ul>
 
     </nav> <!--Container-->
@@ -44,8 +93,13 @@
 
       <div class="meses-content">
 
-        <div class="mes active" id="2024-junho">
+        <!---------------------ADICIONAR POWERBI AQUI------------------------------->
+
+
+        <!----------------------------ANO DE 2024----------------------------------->
+        <div class="mes" id="2024-junho">
           <h2>Junho de 2024</h2>
+          <!--abaixo cole o link-->
           <iframe title="junho" width="1250" height="800"
             src="https://app.powerbi.com/view?r=eyJrIjoiNGJkZGU4ZDQtZDkwYi00MWI4LWFjMjYtZGUwMTQ0MTdkZjJiIiwidCI6ImIxMDUxYzRiLTNiOTQtNDFhYi05NDQxLWU3M2E3MjM0MmZkZCJ9"
             frameborder="0" allowFullScreen="true"></iframe>
@@ -53,23 +107,252 @@
 
         <div class="mes" id="2024-agosto">
           <h2>Agosto de 2024</h2>
-          <iframe title="Agosto" width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiNmJlNmE3MGQtZDg0Mi00NDE3LWI1YTMtMjc1Y2E4MjkzNzg1IiwidCI6ImIxMDUxYzRiLTNiOTQtNDFhYi05NDQxLWU3M2E3MjM0MmZkZCJ9" frameborder="0" allowFullScreen="true"></iframe>
+          <!--abaixo cole o link-->
+          <iframe title="Agosto" width="1024" height="804"
+            src="https://app.powerbi.com/view?r=eyJrIjoiNmJlNmE3MGQtZDg0Mi00NDE3LWI1YTMtMjc1Y2E4MjkzNzg1IiwidCI6ImIxMDUxYzRiLTNiOTQtNDFhYi05NDQxLWU3M2E3MjM0MmZkZCJ9"
+            frameborder="0" allowFullScreen="true"></iframe>
         </div>
 
         <div class="mes" id="2024-setembro">
           <h2>Setembro de 2024</h2>
+          <!--abaixo cole o link-->
+
         </div>
 
         <div class="mes" id="2024-outubro">
           <h2>Outubro de 2024</h2>
+          <!--abaixo cole o link-->
+
         </div>
 
         <div class="mes" id="2024-novembro">
           <h2>Novembro de 2024</h2>
+          <!--abaixo cole o link-->
+
         </div>
 
         <div class="mes" id="2024-dezembro">
           <h2>Dezembro de 2024</h2>
+          <!--abaixo cole o link-->
+
+        </div>
+        <!--acaba o ano de 2024-->
+
+        <!----------------------------------- ANO DE 2025 ------------------------------------->
+        <div class="mes" id="2025-janeiro">
+          <h2>Janeiro de 2025</h2>
+          <!-- Abaixo cole o link do Power BI para Janeiro de 2025 -->
+
+        </div>
+
+        <div class="mes" id="2025-fevereiro">
+          <h2>Fevereiro de 2025</h2>
+          <!-- Abaixo cole o link do Power BI para Fevereiro de 2025 -->
+
+        </div>
+
+        <div class="mes" id="2025-marco">
+          <h2>Março de 2025</h2>
+          <!-- Abaixo cole o link do Power BI para Março de 2025 -->
+
+        </div>
+
+        <div class="mes" id="2025-abril">
+          <h2>Abril de 2025</h2>
+          <!-- Abaixo cole o link do Power BI para Abril de 2025 -->
+
+        </div>
+
+        <div class="mes" id="2025-maio">
+          <h2>Maio de 2025</h2>
+          <!-- Abaixo cole o link do Power BI para Maio de 2025 -->
+
+        </div>
+
+        <div class="mes" id="2025-junho">
+          <h2>Junho de 2025</h2>
+          <!-- Abaixo cole o link do Power BI para Junho de 2025 -->
+
+        </div>
+
+        <div class="mes" id="2025-julho">
+          <h2>Julho de 2025</h2>
+          <!-- Abaixo cole o link do Power BI para Julho de 2025 -->
+
+        </div>
+
+        <div class="mes" id="2025-agosto">
+          <h2>Agosto de 2025</h2>
+          <!-- Abaixo cole o link do Power BI para Agosto de 2025 -->
+
+        </div>
+
+        <div class="mes" id="2025-setembro">
+          <h2>Setembro de 2025</h2>
+          <!-- Abaixo cole o link do Power BI para Setembro de 2025 -->
+
+        </div>
+
+        <div class="mes" id="2025-outubro">
+          <h2>Outubro de 2025</h2>
+          <!-- Abaixo cole o link do Power BI para Outubro de 2025 -->
+
+        </div>
+
+        <div class="mes" id="2025-novembro">
+          <h2>Novembro de 2025</h2>
+          <!-- Abaixo cole o link do Power BI para Novembro de 2025 -->
+
+        </div>
+
+        <div class="mes" id="2025-dezembro">
+          <h2>Dezembro de 2025</h2>
+          <!-- Abaixo cole o link do Power BI para Dezembro de 2025 -->
+
+        </div>
+
+        <!----------------------------------- ANO DE 2026 ------------------------------------->
+        <div class="mes" id="2026-janeiro">
+          <h2>Janeiro de 2026</h2>
+          <!-- Abaixo cole o link do Power BI para Janeiro de 2026 -->
+
+        </div>
+
+        <div class="mes" id="2026-fevereiro">
+          <h2>Fevereiro de 2026</h2>
+          <!-- Abaixo cole o link do Power BI para Fevereiro de 2026 -->
+
+        </div>
+
+        <div class="mes" id="2026-marco">
+          <h2>Março de 2026</h2>
+          <!-- Abaixo cole o link do Power BI para Março de 2026 -->
+
+        </div>
+
+        <div class="mes" id="2026-abril">
+          <h2>Abril de 2026</h2>
+          <!-- Abaixo cole o link do Power BI para Abril de 2026 -->
+
+        </div>
+
+        <div class="mes" id="2026-maio">
+          <h2>Maio de 2026</h2>
+          <!-- Abaixo cole o link do Power BI para Maio de 2026 -->
+
+        </div>
+
+        <div class="mes" id="2026-junho">
+          <h2>Junho de 2026</h2>
+          <!-- Abaixo cole o link do Power BI para Junho de 2026 -->
+
+        </div>
+
+        <div class="mes" id="2026-julho">
+          <h2>Julho de 2026</h2>
+          <!-- Abaixo cole o link do Power BI para Julho de 2026 -->
+
+        </div>
+
+        <div class="mes" id="2026-agosto">
+          <h2>Agosto de 2026</h2>
+          <!-- Abaixo cole o link do Power BI para Agosto de 2026 -->
+
+        </div>
+
+        <div class="mes" id="2026-setembro">
+          <h2>Setembro de 2026</h2>
+          <!-- Abaixo cole o link do Power BI para Setembro de 2026 -->
+
+        </div>
+
+        <div class="mes" id="2026-outubro">
+          <h2>Outubro de 2026</h2>
+          <!-- Abaixo cole o link do Power BI para Outubro de 2026 -->
+
+        </div>
+
+        <div class="mes" id="2026-novembro">
+          <h2>Novembro de 2026</h2>
+          <!-- Abaixo cole o link do Power BI para Novembro de 2026 -->
+
+        </div>
+
+        <div class="mes" id="2026-dezembro">
+          <h2>Dezembro de 2026</h2>
+          <!-- Abaixo cole o link do Power BI para Dezembro de 2026 -->
+        </div>
+
+        <!----------------------------------- ANO DE 2027 ------------------------------------->
+        <div class="mes" id="2027-janeiro">
+          <h2>Janeiro de 2027</h2>
+          <!-- Abaixo cole o link do Power BI para Janeiro de 2027 -->
+
+        </div>
+
+        <div class="mes" id="2027-fevereiro">
+          <h2>Fevereiro de 2027</h2>
+          <!-- Abaixo cole o link do Power BI para Fevereiro de 2027 -->
+
+        </div>
+
+        <div class="mes" id="2027-marco">
+          <h2>Março de 2027</h2>
+          <!-- Abaixo cole o link do Power BI para Março de 2027 -->
+
+        </div>
+
+        <div class="mes" id="2027-abril">
+          <h2>Abril de 2027</h2>
+          <!-- Abaixo cole o link do Power BI para Abril de 2027 -->
+
+        </div>
+
+        <div class="mes" id="2027-maio">
+          <h2>Maio de 2027</h2>
+          <!-- Abaixo cole o link do Power BI para Maio de 2027 -->
+
+        </div>
+
+        <div class="mes" id="2027-junho">
+          <h2>Junho de 2027</h2>
+          <!-- Abaixo cole o link do Power BI para Junho de 2027 -->
+
+        </div>
+
+        <div class="mes" id="2027-julho">
+          <h2>Julho de 2027</h2>
+          <!-- Abaixo cole o link do Power BI para Julho de 2027 -->
+
+        </div>
+
+        <div class="mes" id="2027-agosto">
+          <h2>Agosto de 2027</h2>
+          <!-- Abaixo cole o link do Power BI para Agosto de 2027 -->
+
+        </div>
+
+        <div class="mes" id="2027-setembro">
+          <h2>Setembro de 2027</h2>
+          <!-- Abaixo cole o link do Power BI para Setembro de 2027 -->
+
+        </div>
+
+        <div class="mes" id="2027-outubro">
+          <h2>Outubro de 2027</h2>
+          <!-- Abaixo cole o link do Power BI para Outubro de 2027 -->
+
+        </div>
+
+        <div class="mes" id="2027-novembro">
+          <h2>Novembro de 2027</h2>
+          <!-- Abaixo cole o link do Power BI para Novembro de 2027 -->
+
+        </div>
+
+        <div class="mes" id="2027-dezembro">
+          <h2>Dezembro de 2027</h2>
+          <!-- Abaixo cole o link do Power BI para Dezembro de 2027 -->
         </div>
 
       </div>

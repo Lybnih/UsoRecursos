@@ -26,3 +26,12 @@ menuItems.forEach(item => {
 
 
 mesContents.forEach(content => content.style.display = 'block');
+
+function toggleMeses(id) {
+  var meses = document.getElementById(id);
+  if (meses.classList.contains('hidden')) {
+    meses.classList.remove('hidden');
+  } else {
+    meses.classList.add('hidden');
+  }
+}
