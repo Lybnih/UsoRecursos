@@ -1,22 +1,28 @@
-const monthMenu = document.getElementById('mes-menu');
-const monthSections = document.querySelectorAll('.mes');
 
-monthMenu.addEventListener('click', (event) => {
-  document.getElementById('junho').classList.add('active'); 
-  event.preventDefault();
- 
-  const targetMonth = event.target.dataset.target;
+const menuItems = document.querySelectorAll('#mes-menu li');
+const mesContents = document.querySelectorAll('.mes');
 
-  if (targetMonth) { 
-    monthMenu.querySelectorAll('li').forEach(item => {
-      item.classList.remove('active');
-    });
-    monthSections.forEach(section => {
-      section.classList.remove('active');
-    });
 
-    // Adiciona a classe 'active' ao item clicado e à seção correspondente
-    event.target.classList.add('active');
-    document.getElementById(targetMonth).classList.add('active');
-  }
+menuItems.forEach(item => {
+  item.addEventListener('click', function () {
+
+    menuItems.forEach(i => i.classList.remove('active'));
+
+    this.classList.add('active');
+
+
+    if (this.getAttribute('data-target') === 'todos') {
+      mesContents.forEach(content => content.style.display = 'block');
+    } else {
+
+      mesContents.forEach(content => content.style.display = 'none');
+
+
+      const targetId = this.getAttribute('data-target');
+      document.getElementById(targetId).style.display = 'block';
+    }
+  });
 });
+
+
+mesContents.forEach(content => content.style.display = 'block');

@@ -1,63 +1,85 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Uso de Recursos</title>
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Uso de Recursos</title>
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <div class="menu">
-            <h1>Uso de Recursos</h1>
-            <ul id="mes-menu">
-              <li data-target="junho">Junho</li>
-              <li data-target="agosto">Agosto</li>
-              <li data-target="setembro">Setembro</li>
-              <li data-target="outubro">Outubro</li>
-              <li data-target="novembro">Novembro</li>
-              <li data-target="dezembro">Dezembro</li>
-            </ul>
-          </div> <!--Container-->
+  <div class="container">
+    <nav class="menu">
+      <h1>Uso de Recursos</h1>
 
-        <div class="container-dashboard">
+      <ul id="mes-menu">
+        <li data-target="todos" class="active">Todos</li>
+        <li data-target="junho">Junho</li>
+        <li data-target="agosto">Agosto</li>
+        <li data-target="setembro">Setembro</li>
+        <li data-target="outubro">Outubro</li>
+        <li data-target="novembro">Novembro</li>
+        <li data-target="dezembro">Dezembro</li>
+      </ul>
 
-            <div class="dashboards">
-                <div class="img-topo">
-                    <img src="assets/Cópia de Navy Geometric Technology LinkedIn Banner.png" alt="Dashboard Image">
-                    <div class="title">2024</div>
-                </div><!--img-topo-->
-            </div><!--Dashboards-->
+    </nav> <!--Container-->
 
-            <h2 class="titulo-seção">Dashboard's</h2>
+    <div class="container-dashboard">
 
-            <div class="meses-content">
+      <div class="dashboards">
+        <div class="img-topo">
+          <img src="assets/Cópia de Navy Geometric Technology LinkedIn Banner.png" alt="Dashboard Image">
+          <div class="title">2024</div>
+        </div><!--img-topo-->
+      </div><!--Dashboards-->
 
-                <div class="mes active" id="junho">
-                  <h2>Junho</h2>
-                  <iframe title="junho" width="1250" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiNGJkZGU4ZDQtZDkwYi00MWI4LWFjMjYtZGUwMTQ0MTdkZjJiIiwidCI6ImIxMDUxYzRiLTNiOTQtNDFhYi05NDQxLWU3M2E3MjM0MmZkZCJ9" frameborder="0" allowFullScreen="true" ></iframe>
-                </div>
+      <h2 class="titulo-seção">Dashboard</h2>
 
-                <div class="mes" id="agosto">
-                  <h2>Agosto</h2>
-                  <iframe title="Agosto" width="1250" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiNmJlNmE3MGQtZDg0Mi00NDE3LWI1YTMtMjc1Y2E4MjkzNzg1IiwidCI6ImIxMDUxYzRiLTNiOTQtNDFhYi05NDQxLWU3M2E3MjM0MmZkZCJ9" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-          
-                <div class="mes" id="setembro">
-                  <h2>Setembro</h2>
-                </div>
-          
-              </div>
-            </div>
+      <div class="meses-content">
 
-            </div>
+        <div class="mes active" id="junho">
+          <h2>Junho</h2>
+          <iframe title="junho" width="1250" height="800"
+            src="https://app.powerbi.com/view?r=eyJrIjoiNGJkZGU4ZDQtZDkwYi00MWI4LWFjMjYtZGUwMTQ0MTdkZjJiIiwidCI6ImIxMDUxYzRiLTNiOTQtNDFhYi05NDQxLWU3M2E3MjM0MmZkZCJ9"
+            frameborder="0" allowFullScreen="true"></iframe>
         </div>
+
+        <div class="mes" id="agosto">
+          <h2>Agosto</h2>
+          <iframe title="Agosto" width="1250" height="800"
+            src="https://app.powerbi.com/view?r=eyJrIjoiNmJlNmE3MGQtZDg0Mi00NDE3LWI1YTMtMjc1Y2E4MjkzNzg1IiwidCI6ImIxMDUxYzRiLTNiOTQtNDFhYi05NDQxLWU3M2E3MjM0MmZkZCJ9"
+            frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+
+        <div class="mes" id="setembro">
+          <h2>Setembro</h2>
+        </div>
+
+        <div class="mes" id="outubro">
+          <h2>Outubro</h2>
+        </div>
+
+        <div class="mes" id="novembro">
+          <h2>Novembro</h2>
+        </div>
+
+        <div class="mes" id="dezembro">
+          <h2>Dezembro</h2>
+        </div>
+
+      </div>
     </div>
 
-    
+  </div>
+  </div>
+  </div>
 
-    <script src="js/menu.js"></script>
+
+
+  <script src="js/menu.js"></script>
 </body>
+
 </html>
