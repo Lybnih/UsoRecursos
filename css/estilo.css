@@ -34,9 +34,13 @@ nav.menu {
 }
 
 .menu {
+    display: flex;
+    flex-direction: column;
     padding: 30px;
     width: 350px;
+    height: 100vh;
     margin-right: 5px;
+    justify-content: space-between;
 }
 
 .menu h1 {
@@ -51,6 +55,7 @@ nav.menu {
     padding: 0;
     margin: 0;
 }
+
 
 .menu li {
     display: flex;
@@ -146,15 +151,137 @@ nav.menu {
 
 .mes {
     display: none;
-  }
-  
+}
+
 .mes.active {
     display: block;
 }
 
+.container p{
+    margin-top: 15%;
+}
+
+/*BOTÃO*/
+button {
+    margin-right: 12px;
+    margin-top: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #942424;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+}
+
+button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #c49494;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+    color: #fff;
+}
+
+button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+    color: #fff;
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+nav
+
+/* Estilo para os ícones de contato */
+.contatos {
+    display: flex;
+    justify-content: center;
+    padding: 0 0;
+    margin-right: 18px;
+}
+
+.example-2 {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.example-2 .icon-content {
+    margin: 0 1px;
+}
+
+.example-2 .icon-content a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.example-2 .icon-content a i {
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .example-2 {
+        flex-direction: column;
+    }
+
+    .example-2 .icon-content {
+        margin: 10px 0;
+    }
+}
+
+
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 /* Responsividade */
 @media (max-width: 1024px) {
-    
+
     .container-dashboard {
         margin: 0 1% 0 18%;
     }
@@ -185,39 +312,38 @@ nav.menu {
 
 .hidden {
     display: none;
-  }
-  
-  .ano {
+}
+
+.ano {
     cursor: pointer;
     font-weight: bold;
-  }
+}
 
 
-  /* Estilo básico do menu */
+/* Estilo básico do menu */
 .menu ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  /* Estilo para os anos */
-  .menu .ano {
+}
+
+/* Estilo para os anos */
+.menu .ano {
     cursor: pointer;
     padding: 8px;
     font-weight: bold;
     background-color: #f0f0f0;
-  }
+}
 
-  .meses li.active {
+.meses li.active {
     font-weight: bold;
     text-decoration: underline;
-  }
-  
-  .meses-content .mes {
+}
+
+.meses-content .mes {
     display: none;
-  }
-  
-  /* Estilo para exibir o mês selecionado */
-  .meses-content .mes.active {
+}
+
+/* Estilo para exibir o mês selecionado */
+.meses-content .mes.active {
     display: block;
-  }
-  
+}

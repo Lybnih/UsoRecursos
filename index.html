@@ -1,86 +1,109 @@
-<!DOCTYPE html>
-<html>
+  <!DOCTYPE html>
+  <html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Uso de Recursos</title>
-  <link rel="icon" href="assets/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/estilo.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Uso de Recursos</title>
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
 
-<body>
+  <body>
 
-  <div class="container">
-    <nav class="menu">
-      <h1>Uso de Recursos</h1>
+    <div class="container">
+      <nav class="menu">
+        <h1>Uso de Recursos</h1>
 
-      <!--------------------DATAS AQUI------------------------------>
+        <!--------------------DATAS AQUI------------------------------>
 
-      <ul id="mes-menu">
-        <li data-target="todos" class="active">Todos</li>
+        <ul id="mes-menu">
+          <li data-target="todos" class="active">Todos</li>
 
-        <!--ANO DE 2024-->
-        <li class="ano" onclick="toggleMeses('ano2024')">2024</li>
-        <ul id="ano2024" class="meses hidden">
-          <li data-target="2024-junho">Junho</li>
-          <li data-target="2024-agosto">Agosto</li>
-          <li data-target="2024-setembro">Setembro</li>
-          <li data-target="2024-outubro">Outubro</li>
-          <li data-target="2024-novembro">Novembro</li>
-          <li data-target="2024-dezembro">dezembro</li>
-        </ul><!--acaba ano 2024-->
+          <!--ANO DE 2024-->
+          <li class="ano" onclick="toggleMeses('ano2024')">2024</li>
+          <ul id="ano2024" class="meses hidden">
+            <li data-target="2024-junho">Junho</li>
+            <li data-target="2024-agosto">Agosto</li>
+            <li data-target="2024-setembro">Setembro</li>
+            <li data-target="2024-outubro">Outubro</li>
+            <li data-target="2024-novembro">Novembro</li>
+            <li data-target="2024-dezembro">dezembro</li>
+          </ul><!--acaba ano 2024-->
 
-        <!--ANO DE 2025-->
-        <li class="ano" onclick="toggleMeses('ano2025')">2025</li>
-        <ul id="ano2025" class="meses hidden">
-          <li data-target="2025-janeiro">Janeiro</li>
-          <li data-target="2025-fevereiro">Fevereiro</li>
-          <li data-target="2025-marco">Março</li>
-          <li data-target="2025-abril">Abril</li>
-          <li data-target="2025-maio">Maio</li>
-          <li data-target="2025-junho">Junho</li>
-          <li data-target="2025-agosto">Agosto</li>
-          <li data-target="2025-setembro">Setembro</li>
-          <li data-target="2025-outubro">Outubro</li>
-          <li data-target="2025-novembro">Novembro</li>
-          <li data-target="2025-dezembro">dezembro</li>
-        </ul><!--acaba ano 2025-->
+          <!--ANO DE 2025-->
+          <li class="ano" onclick="toggleMeses('ano2025')">2025</li>
+          <ul id="ano2025" class="meses hidden">
+            <li data-target="2025-janeiro">Janeiro</li>
+            <li data-target="2025-fevereiro">Fevereiro</li>
+            <li data-target="2025-marco">Março</li>
+            <li data-target="2025-abril">Abril</li>
+            <li data-target="2025-maio">Maio</li>
+            <li data-target="2025-junho">Junho</li>
+            <li data-target="2025-agosto">Agosto</li>
+            <li data-target="2025-setembro">Setembro</li>
+            <li data-target="2025-outubro">Outubro</li>
+            <li data-target="2025-novembro">Novembro</li>
+            <li data-target="2025-dezembro">dezembro</li>
+          </ul><!--acaba ano 2025-->
 
-        <!--ANO DE 2026-->
-        <li class="ano" onclick="toggleMeses('ano2026')">2026</li>
-        <ul id="ano2026" class="meses hidden">
-          <li data-target="2026-janeiro">Janeiro</li>
-          <li data-target="2026-fevereiro">Fevereiro</li>
-          <!-- Continue adicionando os meses de 2026 -->
+          <!--ANO DE 2026-->
+          <li class="ano" onclick="toggleMeses('ano2026')">2026</li>
+          <ul id="ano2026" class="meses hidden">
+            <li data-target="2026-janeiro">Janeiro</li>
+            <li data-target="2026-fevereiro">Fevereiro</li>
+            <!-- Continue adicionando os meses de 2026 -->
 
-        </ul><!--acaba ano 2026-->
+          </ul><!--acaba ano 2026-->
 
-        <!--ANO DE 2027-->
-        <li class="ano" onclick="toggleMeses('ano2027')">2027</li>
-        <ul id="ano2027" class="meses hidden">
-          <li data-target="2027-janeiro">Janeiro</li>
-          <li data-target="2027-fevereiro">Fevereiro</li>
-          <!-- Continue adicionando os meses de 2027 -->
+          <!--ANO DE 2027-->
+          <li class="ano" onclick="toggleMeses('ano2027')">2027</li>
+          <ul id="ano2027" class="meses hidden">
+            <li data-target="2027-janeiro">Janeiro</li>
+            <li data-target="2027-fevereiro">Fevereiro</li>
+            <!-- Continue adicionando os meses de 2027 -->
 
-        </ul><!--acaba ano 2027-->
+          </ul><!--acaba ano 2027-->
 
-        <!--ANO DE 2028-->
-        <li class="ano" onclick="toggleMeses('ano2028')">2028</li>
-        <ul id="ano2028" class="meses hidden">
-          <li data-target="2028-janeiro">Janeiro</li>
-          <li data-target="2028-fevereiro">Fevereiro</li>
-          <!-- Continue adicionando os meses de 2028 -->
+          <!--ANO DE 2028-->
+          <li class="ano" onclick="toggleMeses('ano2028')">2028</li>
+          <ul id="ano2028" class="meses hidden">
+            <li data-target="2028-janeiro">Janeiro</li>
+            <li data-target="2028-fevereiro">Fevereiro</li>
+            <!-- Continue adicionando os meses de 2028 -->
 
-        </ul><!--acaba ano 2028-->
+          </ul><!--acaba ano 2028-->
 
-        <!--Continue os anos na linha abaixo-->
+          <!--Continue os anos na linha abaixo-->
 
-      </ul>
-      </ul>
+        </ul>
+        </ul>
 
-    </nav> <!--Container-->
+        <button>
+          <span>Conheça nossos Recursos</span>
+        </button>
+
+        <p>© 2024 Vitória Lybnih. all rights reserved.</p>
+        <div class="contatos">
+          <ul class="example-2">
+              <li class="icon-content">
+                <a href="https://www.linkedin.com/in/lybnih-vitoria-3b52501b9/" aria-label="LinkedIn" data-social="linkedin">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                
+              </li>
+                
+              </li>
+              <li class="icon-content">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=lybnihvitoria@gmail.com" aria-label="Gmail" data-social="gmail">
+                  <i class="bi bi-envelope"></i>
+                </a>
+              </li>
+
+      </div><!--Contatos-->
+      </nav> <!--Container-->
 
     <div class="container-dashboard">
 
