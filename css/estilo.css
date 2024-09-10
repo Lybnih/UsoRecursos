@@ -169,7 +169,7 @@ nav.menu {
     display: block;
 }
 
-.container p{
+.container .menu p{
     margin-top: 15%;
 }
 
@@ -358,3 +358,57 @@ button:hover span {
 .meses-content .mes.active {
     display: block;
 }
+
+.imagens .title {
+    position: absolute;
+    left: 520px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111418;
+}
+
+.oculto {
+    display: none;
+  }
+
+#recursos {
+    padding: 20px;
+}
+
+#recursos .topico {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#recursos .topico img {
+    margin-bottom: 10px;
+    border-radius: 8px; 
+}
+
+#recursos .topico img {
+    width: 100%; 
+    height: auto; 
+    display: block; /* Impede que o espaço em branco abaixo da imagem afete o posicionamento do título */
+    border-radius: 8px;
+}
+
+/* Estilo do título sobreposto */
+.titulo-imagem {
+    position: absolute;
+    bottom: 40px; /* Ajusta a distância da parte inferior da imagem */
+    left: 10px;    /* Ajusta a distância da parte esquerda da imagem */
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo semi-transparente */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px; /* Borda arredondada no título */
+}
+
+
+
+  
