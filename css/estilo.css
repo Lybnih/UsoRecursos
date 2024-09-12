@@ -476,7 +476,7 @@ button:hover span {
     color: #555;
 }
 
-@media screen and (max-width: 1920px){
+@media (max-width: 1920px){
     nav.menu {
         width: 16%;
         padding: 20px 6px 0 1%;
