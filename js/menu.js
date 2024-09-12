@@ -50,3 +50,4 @@ recursosBtn.addEventListener("click", function () {
 
   tituloSecao.textContent = 'Conheça nossos recursos';
 });
+
