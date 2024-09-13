@@ -51,3 +51,15 @@ recursosBtn.addEventListener("click", function () {
   tituloSecao.textContent = 'Conheça nossos recursos';
 });
 
+const menuToggle = document.getElementById('menu-toggle');
+const menuIcon = document.querySelector('.menu-icon');
+
+menuToggle.addEventListener('change', function() {
+    if (menuToggle.checked) {
+        menuIcon.classList.add('active');
+    } else {
+        menuIcon.classList.remove('active');
+    }
+});
+
+

@@ -476,6 +476,18 @@ button:hover span {
     color: #555;
 }
 
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 20;
+    transition: left 0.3s ease-in-out;
+    display: none; /* Por padrão, esconda o ícone */
+}
+
+
 
 
 @media (max-width: 1600px){
@@ -542,13 +554,13 @@ button:hover span {
     }
 
     .menu-icon {
-        display: block;
-        cursor: pointer;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        font-size: 1.9rem;
-        z-index: 20;
+        display: block; /* Mostra o ícone do menu em dispositivos móveis */
+    }
+    
+    .menu-icon.active {
+        position: absolute; /* Ícone do menu estático quando o menu está aberto */
+        top: 20px; /* Ajuste conforme necessário */
+        left: 20px; /* Ajuste conforme necessário */
     }
 
     #menu-toggle:checked + .menu-icon + .menu {
