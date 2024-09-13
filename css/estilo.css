@@ -580,6 +580,42 @@ button:hover span {
         padding: 2px;
     }
 
+    /* Botão Padrão */
+button {
+    font-size: 0.97em; 
+    padding: 15px 15px;
+}
+
+button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 1.09em; /* Ligeiramente menor que o botão agenda */
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+    color: #fff;
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+/* Botão Agenda */
+.agenda button {
+    margin-right: 12px;
+    font-size: 100%;
+    margin-bottom: 15px;
+}
+
+.agenda button span {
+    width: 100%;
+    padding: 10px 10px;
+    color: #fff;
+}
     .img-topo {
         margin-top: 10px;
         margin-bottom: 15px;
